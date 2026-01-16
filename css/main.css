@@ -1,7 +1,108 @@
-/* === Hearts Main File === */
+/* ===== Hearts Components Library ===== */
 
-/* التنسيق الأساسي */
-@import url("hearts-style.css");
+/* ----- مربعات عامة ----- */
+.hearts-box {
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+  text-align: center;
+}
 
-/* مكتبة الأشكال */
-@import url("hearts-components.css");
+/* ----- مربعات معلومات وتنبيه ونجاح ----- */
+.hearts-info {
+  background: #e8f2ff;
+  border-right: 5px solid #2b55a8;
+  padding: 18px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.hearts-warning {
+  background: #fff4e5;
+  border-right: 5px solid #ff9800;
+  padding: 18px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.hearts-success {
+  background: #e6f7ee;
+  border-right: 5px solid #28a745;
+  padding: 18px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* ----- بطاقات المحتوى (Grid / Cards) ----- */
+.hearts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.hearts-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+/* ----- خلفيات متدرجة ----- */
+.hearts-bg-light {
+  background: linear-gradient(135deg,#f5f7fa,#e8ecf3);
+  padding: 25px;
+  border-radius: 14px;
+}
+
+.hearts-bg-dark {
+  background: #1e1e2f;
+  color: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+}
+
+/* ----- أزرار احترافية ----- */
+.hearts-btn {
+  display: inline-block;
+  background: linear-gradient(to right,#2b55a8,#1e3c72);
+  color: #fff !important;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ----- صندوق تحميل ----- */
+.hearts-download-box {
+  background: #ffffff;
+  border: 2px dashed #2b55a8;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.hearts-download-btn {
+  display: inline-block;
+  background: #2b55a8;
+  color: #fff !important;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* ----- عناوين داخل الصناديق ----- */
+.hearts-box h2,
+.hearts-info h2,
+.hearts-warning h2,
+.hearts-success h2 {
+  font-size: 24px;
+  color: #2b55a8;
+  margin-bottom: 15px;
+  }
